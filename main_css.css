@@ -38,13 +38,13 @@ header nav{
 		background:transparent;}
 
 /*intro*/
-.jumbotron{margin:20px 47px 20px 47px;
+.board .jumbotron{margin:20px 47px 20px 47px;
   height:500px;}
 
-.jumbotron p{color:white}
-.jumbotron h2{color:white}
+.board .jumbotron p{color:white}
+.board.jumbotron h2{color:white}
 
-.jumbotron span{margin: 0px 100px}
+.board .jumbotron span{margin: 0px 100px}
 /*Footer*/
 .footer ul {list-style: none;
   display:flex;
