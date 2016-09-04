@@ -42,7 +42,7 @@ header nav{
   height:500px;}
 
 .board .jumbotron p{color:white}
-.board.jumbotron h2{color:white}
+.board .jumbotron h2{color:white}
 
 .board .jumbotron span{margin: 0px 100px}
 /*Footer*/
