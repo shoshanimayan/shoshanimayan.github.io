@@ -1,0 +1,60 @@
+html body {
+    background-image: url("https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/image3.JPG");
+   background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;  
+}
+
+/*navigation bar*/
+nav ul{list-style: none;
+  display:flex;
+  align-items: flex-start;
+  top:23px;}
+
+nav li a{text-decoration: none;
+    background-color:#fc9200;
+    border: none;
+  border-bottom:2px solid black ;
+    color: white;
+    padding: 5px 16px 6px;
+    border-radius: 15px;
+    font-size: 16px;
+    margin: 6px 6px;
+  -webkit-transition-duration: 1s;
+}
+nav li a:hover{color:white;
+text-decoration:none;
+  background-color:#FCc000;
+text-transform:uppercase;
+}
+
+nav h1{top:-10px;
+  color:white}
+
+header nav{
+  w
+  max-height:80px;
+	padding: 10px;
+		background:transparent;}
+
+/*intro*/
+.jumbotron{margin:20px 47px 20px 47px;
+  height:500px;}
+
+.jumbotron p{color:white}
+.jumbotron h2{color:white}
+
+.jumbotron span{margin: 0px 100px}
+/*Footer*/
+.footer ul {list-style: none;
+  display:flex;
+  align-items: flex-start;
+  }
+.footer .row ul li a{padding: 5px 11px 6px;
+margin: 4px 4px;}
+
+
+
+
+  
+
