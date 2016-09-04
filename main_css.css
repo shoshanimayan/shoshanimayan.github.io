@@ -1,4 +1,4 @@
-html body {
+html .about {
     background-image: url("https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/image3.JPG");
    background-size:     cover;                      /* <------ */
     background-repeat:   no-repeat;
