@@ -45,7 +45,9 @@ header nav {
   padding-bottom:2em;
 		background:transparent;
 Border-bottom:solid gray;
-border-radius: 10px;}
+border-radius: 10px;
+background-color:gray;	
+}
 
 /*intro*/
 .board .jumbotron{margin:20px 47px 20px 47px;
