@@ -33,7 +33,7 @@ nav h1{top:-10px;
 }
 
 header nav {
-  header nav{
+  
     margin:0em 0em 3em 0em;
   max-height:80px;
 	padding: 10px;
@@ -51,7 +51,7 @@ text-shadow: -10px 10px 5px rgba(0,0,5,10);
 margin:0px 0px 40px 20px}
 .board .jumbotron h2{color:white;
 text-shadow: -10px -10px 10px rgba(0,0,10,10);
-margin: 1em  0px 1em 0px}
+margin: 0em  0px 1em 0px}
 
 .board .jumbotron span{margin: 0px 100px}
 /*Footer*/
