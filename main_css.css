@@ -112,6 +112,6 @@ background-color:transparent;
  font-family: "Arial", Times, serif;
   font-size: 1.5em;}
 
-.block_list li a:hover{text-transform:uppercase;
+.block_list li a:hover{
   text-decoration:none;
   color:red}
