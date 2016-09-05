@@ -1,9 +1,14 @@
 html .about {
-    background-image: url("https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/image3.JPG");
-   background-size:     cover;                      /* <------ */
+    background-image: url("https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/image3.JPG");}
+
+html .home{background-image: url("https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/image2.JPG");}
+
+html body{
+   background-size:     cover;                     
     background-repeat:   no-repeat;
     background-position: center center;  
 }
+
 
 /*navigation bar*/
 nav ul{list-style: none;
