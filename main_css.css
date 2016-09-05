@@ -29,9 +29,7 @@ nav li a{text-decoration: none;
 }
 nav li a:hover{color:white;
 text-decoration:none;
-  background-color:#FCc000;
-text-transform:uppercase;
-}
+  background-color:#FCc000;}
 
 nav h1{top:-10px;
   color:white;
