@@ -65,6 +65,9 @@ text-shadow: -10px -10px 10px rgba(0,0,10,10);
 margin: 0em  0px 1em 0px}
 
 .board .jumbotron span{margin: 0px 100px}
+
+.board .jumbotron .pic{float:left}
+
 /*Footer*/
 .footer ul {list-style: none;
   display:flex;
