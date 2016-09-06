@@ -3,6 +3,9 @@ html .about {
 
 html .home{background-image: url("https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/image2.JPG");}
 
+html .contact {
+    background-image: url(https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/image4.JPG);}
+
 html body{
    background-size:     cover;                     
     background-repeat:   no-repeat;
