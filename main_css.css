@@ -113,3 +113,14 @@ background-color:transparent;
 .block_list li a:hover{
   text-decoration:none;
   color:red}
+  
+ /*contacts*/
+.contacts .jumbotron{margin:90px 47px 50px 47px;height:500px;}
+
+.contacts .jumbotron p{color:white;
+text-align: center; postion:absolute; margin-top:2em;
+text-shadow: -10px 10px 10px rgba(0,0,10,10);}
+.contacts .jumbotron h2{color:white;
+text-align: center; position: relative;text-shadow: -10px 10px 10px rgba(0,0,10,10);}
+.contacts .jumbotron div{margin:auto 0;
+margin-top:1em}
