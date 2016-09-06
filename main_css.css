@@ -4,7 +4,7 @@ html .about {
 html .home{background-image: url("https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/image2.JPG");}
 
 html .contact {
-    background-image: url(https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/image4.JPG);}
+    background-image: url(https://media.giphy.com/media/Nc1d6apaHowmY/giphy.gif);}
 
 html body{
    background-size:     cover;                     
@@ -23,6 +23,7 @@ nav li a{text-decoration: none;
     background-color:#fc9200;
     border: none;
   border-bottom:2px solid black ;
+  
     color: white;
     padding: 5px 16px 6px;
     border-radius: 15px;
@@ -46,6 +47,8 @@ header nav {
   padding-bottom:2em;
 		background:transparent;
 Border-bottom:solid gray;
+border-left:solid gray;
+border-right:solid gray;
 border-radius: 10px;
 background-color:silver;	
 }
