@@ -119,7 +119,8 @@ background-color:transparent;
  font-family: "Arial", Times, serif;
   font-size: 1.5em;
 border:solid ;
-padding: 2em 3em 2em 3em}
+padding: 2em 3em 2em 3em;
+-webkit-transition-duration: 2s}
 
 .block_list li a:hover{;
   text-decoration:none;
