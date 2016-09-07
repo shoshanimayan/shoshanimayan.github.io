@@ -120,7 +120,7 @@ background-color:transparent;
   font-size: 1.5em;
 border:solid ;
 padding: 2em 3em 2em 3em;
--webkit-transition-duration: 2s}
+-webkit-transition-duration: 1s}
 
 .block_list li a:hover{;
   text-decoration:none;
