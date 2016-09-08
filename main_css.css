@@ -143,6 +143,7 @@ text-align: center; position: relative;text-shadow: -10px 10px 10px rgba(0,0,10,
 margin-top:1em}
 
 /*resume page*/
+
 #top{ background-image:url("https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/image4.JPG");
 background-size: cover;           
 background-repeat: no-repeat;
@@ -170,9 +171,51 @@ font-family:impact;
 text-decoration:none;
 border:solid green .35em;
 font-family:"Impact"}
+/*text body*/
 
-#pdf{margin:5em}
+#wrap{background-color:#FDF3E7;
+width: 65em; 
+  margin: 15px auto; 
+  position: relative;
+height: 185em;
+position:relative}
 
-iframe{align:right;
-width:100%;
-height:160em}
+.H{color:black;
+  font-weight: bold;
+border-bottom:solid #C63D0F;
+width:30%;
+padding-top:1em;
+padding-left:1em}
+
+.sub-H{color:black;
+  font-weight: bold;
+margin:2em 3em 0em 3em}
+
+#wrap >p{color:black;
+text-align:left;
+margin:2em 3em 0em 3em;
+font-size:1.3em}
+
+#wrap ul {list-style:none; 
+  color:black;
+font-size:1.3em;
+margin:0em 3em 0em 3em;}
+/*scroll*/
+.scroll {
+  ;position: fixed;
+  top: 6em;
+  left: 78em;
+  z-index: 9999;
+  height: 10px;}
+
+.scroll ul{list-style:none;
+background-color:rgba(51,51,51,0.8);
+padding-right:2em;
+border: solid 2px #7E8F7C}
+
+.scroll ul li {
+text-align:center;
+padding-left:em;
+padding-bottom:.5em;}
+
+.scroll ul li a{color:white}
