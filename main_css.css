@@ -18,39 +18,39 @@ html body{
 nav ul{list-style: none;
   display:flex;
   align-items: flex-start;
-  top:23px;}
+  top:1.4375em;}
 
 nav li a{text-decoration: none;
     background-color:#fc9200;
     border: none;
-  border-bottom:2px solid black ;
+  border-bottom:0.125em solid black ;
   
     color: white;
-    padding: 5px 16px 6px;
-    border-radius: 15px;
-    font-size: 16px;
-    margin: 6px 6px;
+    padding: 0.3125em 1em  0.375em;
+    border-radius: 0.9375em;
+    font-size: 1em;
+    margin: 0.375em 0.375em;
   -webkit-transition-duration: 1s;
 }
 nav li a:hover{color:white;
 text-decoration:none;
   background-color:#FCc000;}
 
-nav h1{top:-10px;
+nav h1{top:-0.625em;
   color:white;
 }
 
 header nav {
   
     margin:0em 0em 3em 0em;
-  max-height:80px;
-	padding: 10px;
+  max-height:5em;
+	padding: 0.625em;
   padding-bottom:2em;
 		background:transparent;
 Border-bottom:solid gray;
 border-left:solid gray;
 border-right:solid gray;
-border-radius: 10px;
+border-radius: 0.625em;
 background-color:silver;	
 }
 
