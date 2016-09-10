@@ -1,5 +1,5 @@
 html .about {
-    background-image: url("http://www.jpeg-optimizer.com/uploaded_images_final/image3-min__1473409083_24.6.190.73.jpg");}
+    background-image: url("https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/image3-min.JPG");}
 
 html .home{background-image: url("https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/image2-min.JPG");}
 
@@ -144,7 +144,7 @@ margin-top:1em}
 
 /*resume page*/
 
-#top{ background-image:url("http://www.jpeg-optimizer.com/uploaded_images_final/image4-min__1473409176_24.6.190.73.jpg");
+#top{ background-image:url("https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/image4-min.JPG");
 background-size: cover;           
 background-repeat: no-repeat;
 background-position:center center;
