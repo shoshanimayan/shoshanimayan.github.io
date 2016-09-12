@@ -8,6 +8,8 @@ html .contact {
 html .resume{ background-color:#000000}
 
 html body{
+  background:black;}
+html #screen{
    background-size:     cover;                     
     background-repeat:   no-repeat;
     background-position: center center;  
