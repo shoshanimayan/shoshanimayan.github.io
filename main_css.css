@@ -1,15 +1,15 @@
-html .about {
+html #about {
     background-image: url("https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/image3-min__1473500421_24.6.190.73.jpg");}
 
-html .home{background-image: url("https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/image2-min__1473500438_24.6.190.73.jpg");}
+html #home{background-image: url("https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/image2-min__1473500438_24.6.190.73.jpg");}
 
-html .contact {
+html #contact {
     background-image: url(https://media.giphy.com/media/Nc1d6apaHowmY/giphy.gif);}
 html .resume{ background-color:#000000}
 
 html body{
   background:black;}
-html #screen{
+html .screen{
    background-size:     cover;                     
     background-repeat:   no-repeat;
     background-position: center center;  
