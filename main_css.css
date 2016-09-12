@@ -241,6 +241,6 @@ padding-bottom:.5em;}
     animation-fill-mode: both;}
 
   /* An element that fades in */
-  .screen{
+  .scene_fade{
     animation-name: fadeIn;}
   } 
