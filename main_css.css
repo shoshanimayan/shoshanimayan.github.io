@@ -1,15 +1,15 @@
-html #about {
+html .about {
     background-image: url("https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/image3-min__1473500421_24.6.190.73.jpg");}
 
-html #home{background-image: url("https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/image2-min__1473500438_24.6.190.73.jpg");}
+html .home{background-image: url("https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/image2-min__1473500438_24.6.190.73.jpg");}
 
-html #contact {
+html .contact {
     background-image: url(https://media.giphy.com/media/Nc1d6apaHowmY/giphy.gif);}
 html .resume{ background-color:#000000}
 
 html body{
   background:black;}
-html .screen{
+html #screen{
    background-size:     cover;                     
     background-repeat:   no-repeat;
     background-position: center center;  
@@ -222,64 +222,4 @@ padding-bottom:.5em;}
 
 .scroll ul li a{color:white}
 
-/*transition*/
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
 
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, 100%, 0);
-  }
-
-  100% {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    transform: translate3d(100%, 0, 0);
-  }
-
-  100% {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-}
-
-.m-scene {
-  /** Basic styles for an animated element */
-  .scene_element {
-    animation-duration: 0.25s;
-    transition-timing-function: ease-in;
-    animation-fill-mode: both;
-
-  }
-
-  /** An element that fades in */
-  .scene_element--fadein {
-    animation-name: fadeIn;
-  }
-
-  /** An element that fades in and slides up */
-  .scene_element--fadeinup {
-    animation-name: fadeInUp;
-  }
-
-  /** An element that fades in and slides from the right */
-  .scene_element--fadeinright {
-    animation-name: fadeInRight;
-  }
-}
