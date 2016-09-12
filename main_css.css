@@ -221,3 +221,26 @@ padding-left:em;
 padding-bottom:.5em;}
 
 .scroll ul li a{color:white}
+
+/*transition*/
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.scene {
+  /* Basic styles for an animated element */
+  .scene_element{
+    animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;}
+
+  /* An element that fades in */
+  .screen{
+    animation-name: fadeIn;}
+  } 
