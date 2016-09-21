@@ -80,10 +80,10 @@ background-color:silver;
   min-height: 100px;
   object-fit: cover;
   overflow: hidden;}
-
-/*intro*/
+  
+  /*intro*/
 .board .jumbotron{margin:70px 47px 50px 47px;
-  height:55em;}
+ max-height:55em;}
 
 .board .jumbotron p{color:white;
 text-shadow: -10px 10px 5px rgba(0,0,5,10);
@@ -92,7 +92,7 @@ margin:0px 0px 40px 20px}
 text-shadow: -10px -10px 10px rgba(0,0,10,10);
 margin: 0em  0px 1em 0px}
 
-.board .jumbotron span{margin: 0px 100px}
+.board .jumbotron span{margin: 0em  6.5em}
 
 .board .jumbotron .pic{float:left}
 
