@@ -14,18 +14,16 @@
         const Git = document.querySelector("#Github");
         const Linkedin = document.querySelector("#Linkedin");
         const Site = document.querySelector("#Website");
-        const GC = document.querySelector("#G-c");
-        const LC = document.querySelector("#L-c");
-        const WC = document.querySelector("#W-c");
+
         animatedMarker.addEventListener('click', function(ev, target){
             const intersectedElement = ev && ev.detail && ev.detail.intersectedEl;
-            if ((Git && intersectedElement === Git)||(GC && intersectedElement === GC)) {
+            if (Git && intersectedElement === Git) {
                 window.location.href = "https://github.com/shoshanimayan";
             }
-             if ((Linkedin && intersectedElement === Linkedin)||(LC && intersectedElement === LC)) {
+             if (Linkedin && intersectedElement === Linkedin) {
                 window.location.href = "https://www.linkedin.com/in/mayan-shoshani/";
             }
-             if ((Site && intersectedElement === Site)||(WC && intersectedElement === WC)) {
+             if (Site && intersectedElement === Site) {
                 window.location.href = "https://sites.google.com/view/shoshani-cv";
             }
         });
