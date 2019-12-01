@@ -1,0 +1,609 @@
+{
+  "accessors": [
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 53,
+      "max": [
+        5.1036992073059082,
+        -4.1210117340087891,
+        0.9779999852180481
+      ],
+      "min": [
+        -6.5628361701965332,
+        -5.7050795555114746,
+        0.97798538208007812
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 636,
+      "componentType": 5126,
+      "count": 53,
+      "max": [
+        0,
+        0,
+        1.0000001192092896
+      ],
+      "min": [
+        -2.8436713819246506e-06,
+        -3.4195545595139265e-06,
+        1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 147,
+      "max": [
+        52
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1272,
+      "componentType": 5126,
+      "count": 134,
+      "max": [
+        6.0865225791931152,
+        3.8527050018310547,
+        1.0220091342926025
+      ],
+      "min": [
+        -6.1767120361328125,
+        -1.8325213193893433,
+        0.96274226903915405
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 2880,
+      "componentType": 5126,
+      "count": 134,
+      "max": [
+        0.00032985379220917821,
+        0.0065808123908936977,
+        0.99998033046722412
+      ],
+      "min": [
+        -0.0017127374885603786,
+        -0.0065808123908936977,
+        -0.99998432397842407
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 588,
+      "componentType": 5125,
+      "count": 366,
+      "max": [
+        133
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 4488,
+      "componentType": 5126,
+      "count": 70,
+      "max": [
+        2.284959077835083,
+        2.6307716369628906,
+        1.0312908887863159
+      ],
+      "min": [
+        -0.20068313181400299,
+        -1.9716459512710571,
+        1.0010107755661011
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 5328,
+      "componentType": 5126,
+      "count": 70,
+      "max": [
+        -9.9362969194771722e-06,
+        0.0065808123908936977,
+        0.99998015165328979
+      ],
+      "min": [
+        -1.0000001566368155e-05,
+        0.0065799993462860584,
+        0.99997991323471069
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 2052,
+      "componentType": 5125,
+      "count": 198,
+      "max": [
+        69
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 6168,
+      "componentType": 5126,
+      "count": 122,
+      "max": [
+        1.9861140251159668,
+        3.6687638759613037,
+        1.0743999481201172
+      ],
+      "min": [
+        0.16339994966983795,
+        2.2038800716400146,
+        0.99819731712341309
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 7632,
+      "componentType": 5126,
+      "count": 122,
+      "max": [
+        9.9362969194771722e-06,
+        0.0065808123908936977,
+        1
+      ],
+      "min": [
+        -9.9362969194771722e-06,
+        -0.0065808123908936977,
+        -0.99997997283935547
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 2844,
+      "componentType": 5125,
+      "count": 342,
+      "max": [
+        121
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 9096,
+      "componentType": 5126,
+      "count": 399,
+      "max": [
+        5.849543571472168,
+        5.3596668243408203,
+        0.97536647319793701
+      ],
+      "min": [
+        -5.2702512741088867,
+        -5.71197509765625,
+        0.86920195817947388
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 13884,
+      "componentType": 5126,
+      "count": 399,
+      "max": [
+        0.0020057985093444586,
+        0.0065804319456219673,
+        1.0000001192092896
+      ],
+      "min": [
+        -0.00092571653658524156,
+        -0.0065800007432699203,
+        -1.0000001192092896
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 4212,
+      "componentType": 5125,
+      "count": 1113,
+      "max": [
+        398
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 1,
+      "max": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "min": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "type": "MAT4"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "SuperSonicBros Films (https://sketchfab.com/lexrichfilms)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/models/90a5e289c7bf42639842a80f796a5870",
+      "title": "Sanic Rig (Cycles)"
+    },
+    "generator": "Sketchfab-3.43.3",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 8664,
+      "byteOffset": 0,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 18672,
+      "byteOffset": 8664,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 64,
+      "byteOffset": 27336,
+      "byteStride": 64,
+      "name": "floatBufferViews"
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 27400,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "sanicred",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.64000006672000087,
+          0.0031747014072236826,
+          0,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.59999999999999998
+      }
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "sanicwhite",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.80000001190000003,
+          0.80000001190000003,
+          0.80000001190000003,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.59999999999999998
+      }
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "sanictan",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.64000006672000087,
+          0.37119019584145407,
+          0.13902794326804063,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.59999999999999998
+      }
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "sanicblack",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.59999999999999998
+      }
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "sanicblue",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.053226090231738084,
+          0.047578460707729593,
+          0.44767995545923928,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.59999999999999998
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "sanic_mesh_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0
+          },
+          "indices": 2,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "sanic_mesh_1",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 4,
+            "POSITION": 3
+          },
+          "indices": 5,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "sanic_mesh_2",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 7,
+            "POSITION": 6
+          },
+          "indices": 8,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "sanic_mesh_3",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 10,
+            "POSITION": 9
+          },
+          "indices": 11,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "sanic_mesh_4",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 13,
+            "POSITION": 12
+          },
+          "indices": 14,
+          "material": 4,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.70710678118654746,
+        -0,
+        -0,
+        0.70710678118654757
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "Root"
+    },
+    {
+      "children": [
+        4,
+        5
+      ],
+      "matrix": [
+        2.10222,
+        0,
+        0,
+        0,
+        0,
+        2.10222,
+        0,
+        0,
+        0,
+        0,
+        2.10222,
+        0,
+        0.79014000000000006,
+        -0.17929000000000003,
+        -2.2140499999999999,
+        1
+      ],
+      "name": "Sanic Rig"
+    },
+    {
+      "name": "Sanic Rig_rootJoint"
+    },
+    {
+      "children": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "matrix": [
+        0.40737000000000007,
+        0,
+        0,
+        0,
+        0,
+        -0,
+        0.40737000000000007,
+        0,
+        0,
+        -0.40737000000000007,
+        -0,
+        0,
+        -0.22006000000000003,
+        0.42138000000000009,
+        0.99715999999999994,
+        1
+      ],
+      "name": "sanic_mesh"
+    },
+    {
+      "mesh": 0,
+      "name": "sanic_mesh_0"
+    },
+    {
+      "mesh": 1,
+      "name": "sanic_mesh_1"
+    },
+    {
+      "mesh": 2,
+      "name": "sanic_mesh_2"
+    },
+    {
+      "mesh": 3,
+      "name": "sanic_mesh_3"
+    },
+    {
+      "mesh": 4,
+      "name": "sanic_mesh_4"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "skins": [
+    {
+      "inverseBindMatrices": 15,
+      "joints": [
+        4
+      ],
+      "skeleton": 4
+    }
+  ]
+}
+
