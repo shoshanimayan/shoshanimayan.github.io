@@ -11,10 +11,9 @@
 	
 	var touched=false;
 	
-	window.addEventListener('touchstart', function() {
-  // the user touched the screen!
-  touched=true;
-});
+	//window.addEventListener('touchstart', function() {
+//  touched=true;
+//});
 	
 	
         AFRAME.registerComponent('markerhandler', {
@@ -26,7 +25,8 @@
         const AR = document.querySelector("#AR");
 		
 
-        animatedMarker.addEventListener('click', function(ev, target){
+        animatedMarker.addEventListener('touchstart', function(ev, target){
+		touched = true;
             const intersectedElement = ev && ev.detail && ev.detail.intersectedEl;
             if (touched &&Git && intersectedElement === Git) {
                 window.location.href = "https://github.com/shoshanimayan";
