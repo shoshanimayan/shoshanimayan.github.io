@@ -9,14 +9,11 @@
     
     <script >
 	
-	var touched=false;
-	
-	//window.addEventListener('touchstart', function() {
-//  touched=true;
-//});
 	
 	
-        AFRAME.registerComponent('markerhandler', {
+	window.addEventListener('touchstart', function() {
+
+		     AFRAME.registerComponent('markerhandler', {
     init: function() {
         const animatedMarker = document.querySelector("#animated-marker");
         const Git = document.querySelector("#Github");
@@ -26,22 +23,27 @@
 		
 
         animatedMarker.addEventListener('touchstart', function(ev, target){
-		touched = true;
+		
             const intersectedElement = ev && ev.detail && ev.detail.intersectedEl;
-            if (touched &&Git && intersectedElement === Git) {
+            if (Git && intersectedElement === Git) {
                 window.location.href = "https://github.com/shoshanimayan";
             }
-             if (touched &&Linkedin && intersectedElement === Linkedin) {
+             if (Linkedin && intersectedElement === Linkedin) {
                 window.location.href = "https://www.linkedin.com/in/mayan-shoshani/";
             }
-             if (touched &&Site && intersectedElement === Site) {
+             if (Site && intersectedElement === Site) {
                 window.location.href = "https://sites.google.com/view/shoshani-cv";
             }
-			if (touched && AR && intersectedElement === AR) {
+			if (AR && intersectedElement === AR) {
                 window.location.href = "https://shoshanimayan.github.io/businessCard-markerBased.html";
             }
         });
 }});
+		
+]});
+	
+	
+   
     </script>
     
     <body style='margin : 0px; overflow: hidden;'>
