@@ -34,9 +34,13 @@
                 animation-mixer
                 gltf-model="#animated-asset"
                 scale=".005 .005 .005"
-				rotation="-90 0 0"
-				animation="property: rotation; to: -90 45 0; repeat: indefinite; dur: 1000">
-				
+				>
+				<a-animation attribute="rotation"
+               dur="1000"
+               to="0 0 45"
+               repeat="indefinite"
+               direction= "alternating">
+        </a-animation>
             </a-entity>
         </a-marker>
 
