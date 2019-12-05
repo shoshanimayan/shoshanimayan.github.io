@@ -32,8 +32,14 @@
 
                 gltf-model="#animated-asset"
                 scale=".005 .005 .005"
-				animation ="property: rotation; from: 0 0 -30 ; to: 0 0 30; loop: true; dur: 1000; repeat: indefinite; direction: alternate"
 				>
+				     <a-animation attribute="rotation"
+               dur="1000"
+               from ="-0 0 -25"      
+               to="0 0 25"
+               repeat="indefinite"
+               direction= "alternate">
+        </a-animation>
 		
             </a-entity>
         </a-marker>
