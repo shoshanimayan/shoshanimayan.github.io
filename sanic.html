@@ -24,20 +24,18 @@
             <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/sanic%20(1)/scene.gltf"></a-asset-item>
 			<a-asset-item id="ringAsset" src="https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/sonic_mania_special_ring/scene.gltf"></a-asset-item>
 
-	   </a-assets id ="ring" gltf-model="#ringAsset" scale=".005 .005 .005" position ="0 .5 0" >
+	   </a-assets  >
 
         
 
         <a-marker id="animated-marker" preset="hiro">
-		<a-entity animation-mixer
-		id>
+		<a-entity animation-mixer id ="ring" gltf-model="#ringAsset" scale=".005 .005 .005" position ="0 .5 0">
+		
 		</a-entity>
             <a-entity animation-mixer
 							id ="sanic"
-
                 gltf-model="#animated-asset"
                 scale=".005 .005 .005"
-				
 				>
 		
             </a-entity>
