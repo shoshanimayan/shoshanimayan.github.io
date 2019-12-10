@@ -8,13 +8,26 @@
     <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
     <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
 	<script>
-	AFRAME.registerComponent('foo', {
-  init: function () {
-    var scene = this.el.sceneEl.object3D;  // THREE.Scene
-	var sanic = sceneEl.querySelector('#sanic')
-	console.log(sanic)
-  }
+	
+	var ring = document.querySelector('#sanic');
+	var move = document.querySelector('#move');
+	
+	move2.addEventListener('animationend', function(){
+  console.log('end1');
 });
+
+        AFRAME.registerComponent('markerhandler', {
+    init: function() {
+        const sanic = document.querySelector("#sanic");
+
+        animatedMarker.addEventListener('click', function(ev, target){
+            const intersectedElement = ev && ev.detail && ev.detail.intersectedEl;
+            if (sanic && intersectedElement === sanic) {
+				ring.emit("move")
+				console.log("clicked")
+            }
+        });
+}});
 	</script>
     <body style='margin : 0px; overflow: hidden;'>
         <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
@@ -26,21 +39,21 @@
 
 	   </a-assets  >
 
-        
-
-        <a-marker id="animated-marker" preset="hiro">
-		<a-entity animation-mixer id ="ring" gltf-model="#ringAsset" scale=".02 .02 .02" position ="0 2 0" rotation="-90 0 0">
+       
+		<a-marker-camera markerhandler emitevents="true" cursor="rayOrigin: mouse" id="animated-marker" preset="hiro">
 		
+		<a-entity animation-mixer id ="ring" gltf-model="#ringAsset" scale=".02 .02 .02" position ="0 2 0" rotation="-90 0 0">
+		<a-animation id="move" attribute="position" to="0 0 0" delay="2000" dur="3000" fill="forwards" repeat="0"></a-animation>		
 		</a-entity>
-            <a-entity animation-mixer
+		
+        <a-entity animation-mixer
 							id ="sanic"
                 gltf-model="#animated-asset"
                 scale=".005 .005 .005"
-				>
-		
-            </a-entity>
-        </a-marker>
-
+		>
+		</a-entity>
+        
+		</a-marker>
         <a-entity camera></a-entity>
         </a-scene>
     </body>
