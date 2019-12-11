@@ -25,6 +25,9 @@
 });
 
         animatedMarker.addEventListener('click', function(ev, target){
+	const ring = document.querySelector('#ring');
+        const sanic = document.querySelector("#sanic");
+	const move = document.querySelector('#move');
             const intersectedElement = ev && ev.detail && ev.detail.intersectedEl;
             if (sanic && intersectedElement === sanic) {
 			  ring.object3D.visible = true;
