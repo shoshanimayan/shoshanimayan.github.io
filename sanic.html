@@ -9,18 +9,20 @@
     <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
 	<script>
 	
-	var ring = document.querySelector('#ring');
+	
+
+        AFRAME.registerComponent('markerhandler', {
+    init: function() {
+	    
+	    var ring = document.querySelector('#ring');
         var sanic = document.querySelector("#sanic");
 	var move = document.querySelector('#move');
-	/*
+	
 	move.addEventListener('animationend', function(){
   console.log('end1');
   ring.object3D.visible = false;
   
-});*/
-
-        AFRAME.registerComponent('markerhandler', {
-    init: function() {
+});
 
         animatedMarker.addEventListener('click', function(ev, target){
             const intersectedElement = ev && ev.detail && ev.detail.intersectedEl;
