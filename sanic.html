@@ -14,6 +14,8 @@
 	
 	move2.addEventListener('animationend', function(){
   console.log('end1');
+  ring.object3D.visible = false;
+  
 });
 
         AFRAME.registerComponent('markerhandler', {
@@ -23,6 +25,7 @@
         animatedMarker.addEventListener('click', function(ev, target){
             const intersectedElement = ev && ev.detail && ev.detail.intersectedEl;
             if (sanic && intersectedElement === sanic) {
+			  ring.object3D.visible = true;
 				ring.emit("move")
 				console.log("clicked")
             }
@@ -42,8 +45,8 @@
        
 		<a-marker-camera markerhandler emitevents="true" cursor="rayOrigin: mouse" id="animated-marker" preset="hiro">
 		
-		<a-entity animation-mixer id ="ring" gltf-model="#ringAsset" scale=".02 .02 .02" position ="0 2 0" rotation="-90 0 0">
-		<a-animation id="move" attribute="position" to="0 0 0" delay="2000" dur="3000" fill="forwards" repeat="0"></a-animation>		
+		<a-entity animation-mixer id ="ring" gltf-model="#ringAsset" scale=".02 .02 .02" position ="0 2 0" rotation="-90 0 0" visible="false">
+		<a-animation id="move" attribute="position" from ="0 2 0" to="0 0 0" delay="2000" dur="3000" fill="forwards" repeat="0"></a-animation>		
 		</a-entity>
 		
         <a-entity animation-mixer
