@@ -9,10 +9,11 @@
     <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
 	<script>
 	
-	var ring = document.querySelector('#sanic');
+	var ring = document.querySelector('#ring');
+
 	var move = document.querySelector('#move');
 	
-	move2.addEventListener('animationend', function(){
+	move.addEventListener('animationend', function(){
   console.log('end1');
   ring.object3D.visible = false;
   
@@ -26,7 +27,7 @@
             const intersectedElement = ev && ev.detail && ev.detail.intersectedEl;
             if (sanic && intersectedElement === sanic) {
 			  ring.object3D.visible = true;
-				ring.emit("move")
+				move.emit("start")
 				console.log("clicked")
             }
         });
@@ -46,7 +47,7 @@
 		<a-marker-camera markerhandler emitevents="true" cursor="rayOrigin: mouse" id="animated-marker" preset="hiro">
 		
 		<a-entity animation-mixer id ="ring" gltf-model="#ringAsset" scale=".02 .02 .02" position ="0 2 0" rotation="-90 0 0" visible="false">
-		<a-animation id="move" attribute="position" from ="0 2 0" to="0 0 0" delay="2000" dur="3000" fill="forwards" repeat="0"></a-animation>		
+		<a-animation id="move" begin="start" attribute="position" from ="0 2 0" to="0 0 0" delay="2000" dur="3000" fill="forwards" repeat="0"></a-animation>		
 		</a-entity>
 		
         <a-entity animation-mixer
