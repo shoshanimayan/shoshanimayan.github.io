@@ -13,7 +13,7 @@
 
         AFRAME.registerComponent('markerhandler', {
     init: function() {
-	    
+	/*    
 	    var ring = document.querySelector('#ring');
         var sanic = document.querySelector("#sanic");
 	var move = document.querySelector('#move');
@@ -22,17 +22,17 @@
   console.log('end1');
   ring.object3D.visible = false;
   
-});
+});*/
 
         animatedMarker.addEventListener('click', function(ev, target){
-	const ring = document.querySelector('#ring');
+	//const ring = document.querySelector('#ring');
         const sanic = document.querySelector("#sanic");
-	const move = document.querySelector('#move');
+	//const move = document.querySelector('#move');
             const intersectedElement = ev && ev.detail && ev.detail.intersectedEl;
             if (sanic && intersectedElement === sanic) {
-			  ring.object3D.visible = true;
-				move.emit("start")
-				console.log("clicked")
+			//  ring.object3D.visible = true;
+			//	move.emit("start")
+				console.log("clicked");
             }
         });
 }});
