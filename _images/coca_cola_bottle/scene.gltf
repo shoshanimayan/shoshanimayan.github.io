@@ -1,0 +1,413 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 1910,
+      "max": [
+        97.135795593261719,
+        98.634307861328125,
+        419.75228881835938
+      ],
+      "min": [
+        -97.135795593261719,
+        -98.634246826171875,
+        -347.96542358398438
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 22920,
+      "componentType": 5126,
+      "count": 1910,
+      "max": [
+        0.98480784893035889,
+        1,
+        1
+      ],
+      "min": [
+        -0.98480790853500366,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 1910,
+      "max": [
+        1,
+        0.99651265144348145,
+        0.89273715019226074,
+        1
+      ],
+      "min": [
+        -1,
+        -0.99743461608886719,
+        -1,
+        -1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 1910,
+      "max": [
+        1.0566716194152832,
+        1.0846002101898193
+      ],
+      "min": [
+        -0.043498318642377853,
+        -0.095696531236171722
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 8208,
+      "max": [
+        1909
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 45840,
+      "componentType": 5126,
+      "count": 98,
+      "max": [
+        93.48602294921875,
+        94.928207397460938,
+        150.94943237304688
+      ],
+      "min": [
+        -93.486053466796875,
+        -94.928184509277344,
+        -38.167991638183594
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 47016,
+      "componentType": 5126,
+      "count": 98,
+      "max": [
+        0.98448258638381958,
+        0.99966973066329956,
+        0.33650350570678711
+      ],
+      "min": [
+        -0.98448240756988525,
+        -0.99966967105865479,
+        0.025701835751533508
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 30560,
+      "componentType": 5126,
+      "count": 98,
+      "max": [
+        0.99999886751174927,
+        0.98480796813964844,
+        0.055776182562112808,
+        1
+      ],
+      "min": [
+        -0.99999982118606567,
+        -0.98580402135848999,
+        -0.065312661230564117,
+        1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 15280,
+      "componentType": 5126,
+      "count": 98,
+      "max": [
+        1.0566716194152832,
+        0.92961883544921875
+      ],
+      "min": [
+        0.0001494288444519043,
+        0.069907434284687042
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 32832,
+      "componentType": 5125,
+      "count": 432,
+      "max": [
+        97
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Anthony Yanez (https://sketchfab.com/paulyanez)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/models/69dc15f696f04e85a11df4ec4658d907",
+      "title": "Coca Cola Bottle"
+    },
+    "generator": "Sketchfab-3.43.3",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 34560,
+      "byteOffset": 0,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 16064,
+      "byteOffset": 34560,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 48192,
+      "byteOffset": 50624,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 32128,
+      "byteOffset": 98816,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 130944,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/02_-_Default_baseColor.jpeg"
+    },
+    {
+      "uri": "textures/03_-_Default_baseColor.jpeg"
+    }
+  ],
+  "materials": [
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "02_-_Default",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          0.5322027439
+        ],
+        "baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        },
+        "metallicFactor": 1,
+        "roughnessFactor": 0.2177972561
+      }
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "03_-_Default",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "baseColorTexture": {
+          "index": 1,
+          "texCoord": 0
+        },
+        "metallicFactor": 1,
+        "roughnessFactor": 0.47389481710000003
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Bottle_02 - Default_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Bottle_03 - Default_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 6,
+            "POSITION": 5,
+            "TANGENT": 7,
+            "TEXCOORD_0": 8
+          },
+          "indices": 9,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.70710678118654746,
+        -0,
+        -0,
+        0.70710678118654757
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "Coca Cola Bottle.FBX"
+    },
+    {
+      "children": [
+        4
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        5,
+        6
+      ],
+      "matrix": [
+        -0.49024041907728227,
+        -9.64362184464111e-09,
+        1.8296023311157932,
+        0,
+        1.8296023311157934,
+        -2.5840065613107219e-09,
+        0.49024041907728216,
+        0,
+        4.9932280161939501e-15,
+        1.6657407283782959,
+        8.7799275520852784e-09,
+        0,
+        4.0890903472900391,
+        -77.552047729492188,
+        -7.0694630267098546e-05,
+        1
+      ],
+      "name": "Bottle"
+    },
+    {
+      "mesh": 0,
+      "name": "Bottle_02 - Default_0"
+    },
+    {
+      "mesh": 1,
+      "name": "Bottle_03 - Default_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    }
+  ]
+}
+
