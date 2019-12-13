@@ -14,17 +14,13 @@
         <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
         <a-scene >
 
-        <a-assets>
-            
+        <a-assets>        
 			<a-asset-item id="bottleAsset" src="https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/simple_cola_can/scene.gltf"></a-asset-item>
             <a-asset-item id="earthAsset" src="https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/earth/scene.gltf"></a-asset-item>
-                
-
 	   </a-assets  >
 
-       
 		<a-marker id="animated-marker" preset="hiro">
-            <a-entity rotation="-45 0 0" position="-4 0 1.6"  text-geometry="value: Coca Cola Makes the World Go Round; size: 0.05"></a-entity>
+            <a-entity rotation="-45 0 0" position="0 0 1.6"  text-geometry="value: Coca Cola Makes the World Go Round; size: 0.5"></a-entity>
 		<a-entity id="bottle" gltf-model="#bottleAsset" position="0 0 0" scale="0.5 0.5 0.5">
   </a-entity>
   <a-entity position="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000 ;easing: linear" >
@@ -33,7 +29,7 @@
 
 </a-entity>
 			
-			<a-entity position="0 0 -15" particle-system="preset:default;color:#f9e154;particleCount:1000"></a-entity>
+			<a-entity position="0 6 -15" particle-system="preset:default;color:#f9e154;particleCount:5000"></a-entity>
 	
 		</a-marker>
         <a-entity camera></a-entity>
