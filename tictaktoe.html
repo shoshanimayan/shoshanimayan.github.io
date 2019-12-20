@@ -35,9 +35,9 @@ function changeColor(){
 }
 
 function winEvent(){
-document.getElementById("banner").innerHTML = color+" wins!";
 playing=false;
-
+document.querySelector("#winMessage").setAttribute( "text-geometry","value: "+color+" wins!; size: 0.1");
+document.querySelector("#winMessage").setAttribute('material', 'color', color);
 
 }
 
@@ -46,25 +46,28 @@ function winCheck(){
     if(board[1][0]===board[1][1]&&board[1][0]===board[1][2]){winEvent();}
     if(board[2][0]===board[2][1]&&board[2][0]===board[2][2]){winEvent();} 
     if(board[0][0]===board[1][1]&&board[0][0]===board[2][2]){winEvent();}//daignal
-    if(board[0][2]===board[0][1]&&board[0][2]===board[2][0]){winEvent();}
+    if(board[0][2]===board[1][1]&&board[0][2]===board[2][0]){winEvent();}
     if(board[0][0]===board[1][0]&&board[0][0]===board[2][0]){winEvent();}//vertical
     if(board[0][1]===board[1][1]&&board[0][1]===board[2][1]){winEvent();}
     if(board[0][2]===board[1][2]&&board[0][2]===board[2][2]){winEvent();}
 }
             
 animatedMarker.addEventListener('click', function(ev, target){
+    if(playing){
                     console.log(board);
             const intersectedElement = ev && ev.detail && ev.detail.intersectedEl;
             if (x1 && intersectedElement === x1) {
                 console.log("x1");
                 x1.setAttribute('material', 'color', color);
                 board[1][1] =color;
+                winCheck();
                 changeColor();
             }  
             if (x2 && intersectedElement === x2) {
                 console.log("x2");
                 x2.setAttribute('material', 'color', color);  
                 board[2][1] =color;
+                winCheck();
                 changeColor();
 
             }   
@@ -72,6 +75,7 @@ animatedMarker.addEventListener('click', function(ev, target){
                 console.log("x3");
                 x3.setAttribute('material', 'color', color);
                board[0][1] =color;
+               winCheck();
                 changeColor();
 
             } 
@@ -79,6 +83,7 @@ animatedMarker.addEventListener('click', function(ev, target){
                 console.log("x4");
                 x4.setAttribute('material', 'color', color);
                 board[0][2] =color;
+                winCheck();
                 changeColor();
 
             } 
@@ -86,6 +91,7 @@ animatedMarker.addEventListener('click', function(ev, target){
                 console.log("x5");
                 x5.setAttribute('material', 'color', color);
                 board[0][0] =color;
+                winCheck();
                 changeColor();
 
             } 
@@ -93,6 +99,7 @@ animatedMarker.addEventListener('click', function(ev, target){
                 console.log("x6");
                 x6.setAttribute('material', 'color', color);
                 board[1][2] =color;
+                winCheck();
                  changeColor();
 
             } 
@@ -100,6 +107,7 @@ animatedMarker.addEventListener('click', function(ev, target){
                 console.log("x7");
                 x7.setAttribute('material', 'color', color);
                 board[1][0] =color;
+                winCheck();
                 changeColor();
 
             } 
@@ -107,6 +115,7 @@ animatedMarker.addEventListener('click', function(ev, target){
                 console.log("x8");
                 x8.setAttribute('material', 'color', color);
                 board[2][2] =color;
+                winCheck();
                 changeColor();
 
             } 
@@ -114,17 +123,20 @@ animatedMarker.addEventListener('click', function(ev, target){
                 console.log("x9");
                 x9.setAttribute('material', 'color', color);
                 board[2][0] =color;
+                winCheck();
                  changeColor();
 
             } 
+        }
         });
       
 }});
     </script>
 <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs='sourceType: webcam;'>
-        <p id="banner"></p>
         <a-marker markerhandler emitevents="true" cursor="rayOrigin: mouse" id="animated-marker" preset="hiro">
+                        <a-entity rotation="-90 0 0" position="0 0 -3.5"  id ="winMessage"></a-entity>
+
 <a-entity position= "0 0 -2" id ="board">
              <a-entity id="x1" geometry="primitive: plane; height: .5; width: .5" material="color: white" position='0 0 0' color='white' rotation ="-90 0 0" >
                 <a-text wrapCount = "5" align = "center"></a-text>
