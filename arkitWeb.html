@@ -48,6 +48,10 @@
         const raycaster = document.querySelector('[ar-raycaster]');
         const cursor = document.querySelector('#cursor');
         const ring = document.querySelector('#ring');
+	      
+	 ring.addEventListener(collide', function () {
+                  ring.setAttribute('visible',false);
+      });
 
         //move cursor
         raycaster.addEventListener('raycaster-intersection', (event) => {
