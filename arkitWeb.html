@@ -48,12 +48,15 @@
         const raycaster = document.querySelector('[ar-raycaster]');
         const cursor = document.querySelector('#cursor');
         const ring = document.querySelector('#ring');
+        let firstTime = true;
 
         //move cursor
         raycaster.addEventListener('raycaster-intersection', (event) => {
           cursor.setAttribute('position', event.detail.intersections[0].point);
-          ring.setAttribute('position',event.detail.intersections[0].point)
-          ring.setAttribute('visible',true)
+	if(!firstTime){	
+          ring.setAttribute('position',event.detail.intersections[0].point);
+          ring.setAttribute('visible',true);
+	}
 
         });
         
@@ -67,7 +70,6 @@ ring.addEventListener(collide', function () {
         const walker = document.querySelector('#walker');
         const { stringify } = AFRAME.utils.coordinates;
 
-        let firstTime = true;
         raycaster.addEventListener('click', () => {
           const target = raycaster.components.cursor.intersection.point;
 //initilize walker
