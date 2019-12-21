@@ -73,7 +73,7 @@
             const distance = currentPosition.distanceTo(target);
 
             walker.object3D.lookAt(target);
-ring.setAttribute('position',stringify(target));
+	   ring.setAttribute('position',target);
           ring.setAttribute('visible',true);
             const animation = document.createElement('a-animation');
             animation.setAttribute('attribute', 'position');
