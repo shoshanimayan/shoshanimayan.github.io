@@ -63,11 +63,7 @@
         const { stringify } = AFRAME.utils.coordinates;
         let firstTime = true;
 	      
-	       update: function (oldData) {
-    if(walker.getAttribute('position')===ring.getAttribute('position')){
-    ring.setAttribute('visible',false);
-    }
-  }
+	  
 
         raycaster.addEventListener('click', () => {
           const target = raycaster.components.cursor.intersection.point;
