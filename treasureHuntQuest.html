@@ -1,0 +1,141 @@
+<!-- AR.js by @jerome_etienne - github: https://github.com/jeromeetienne/ar.js - info: https://medium.com/arjs/augmented-reality-in-10-lines-of-html-4e193ea9fdbf -->
+ <head>
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    </head>
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
+    <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+      <script src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
+<script >
+    
+AFRAME.registerComponent('markerhandler', {
+    init: function() {
+const text= document.querySelector("#text");
+const m1= document.querySelector("#m1");
+const m2= document.querySelector("#m2");
+const m3= document.querySelector("#m3");
+const sword =document.querySelector("#questItem2");
+const fire =document.querySelector("#questItem1");
+const monster =document.querySelector("#beast");
+var m1Visible=false;
+var m2Visible=false;
+var m3Visible=false;
+var haveFS=false;
+var killedB=false;
+var defaultText="welcome to AR Quest! search for treasure and fight monsters!";
+
+function end(){
+if(m3Visible && haveFS &&(m1Visible||m2Visible)){
+     text.setAttribute("value","\"Blaargh!\", you killed the beast!");
+            defaultText="congrats! you killed the beast! you win!";
+            killedB=true;
+}
+
+}
+
+function fuse(){
+    if(m1Visible && m2Visible){
+        sword.setAttribute("gltf-model","https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/the_executioner/scene.gltf");
+        fire.setAttribute("gltf-model","https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/the_executioner/scene.gltf");
+            text.setAttribute("value","you forged the flame sword! it was added to your inventory.");
+            defaultText="congrats! you have the flame sword! go kill the beast!";
+            haveFS=true;
+
+    }
+}
+
+
+m1.addEventListener('markerFound', function() {
+    if(haveFS){
+            text.setAttribute("value","that's the flame sword you built!");
+
+    }
+    else{
+    text.setAttribute("value","you found fire! it was added into your inventory.");
+}
+    console.log(m1Visible);
+    m1Visible=true;
+    fuse();
+})
+
+m1.addEventListener('markerLost', function() {
+    text.setAttribute("value",defaultText);
+    console.log("m1 lost");
+    m1Visible=false;
+})
+
+
+m2.addEventListener('markerFound', function() {
+    if(haveFS){
+    text.setAttribute("value","that's the flame sword you built!");
+    }
+    else{
+    text.setAttribute("value","you found a sword! it was added to your inventory.");
+}
+    console.log("m2");
+    m2Visible=true;
+    fuse();
+})
+
+m2.addEventListener('markerLost', function() {
+    text.setAttribute("value",defaultText);
+    console.log("m2 lost");
+    m2Visible=false;
+})
+
+ m3.addEventListener('markerFound', function() {
+    console.log("m3");
+    text.setAttribute("value","Fool! you will never defeat me without a flame sword!");
+    defaultText="find a fire sword to defeat the beast! you can combine two objects by looking at both of them.";
+    m3Visible=true;
+    end();
+})
+
+m3.addEventListener('markerLost', function() {
+    m3Visible=false;
+    console.log("lostm3");
+    if(killedB){
+         text.setAttribute("value","The beast is dead! hurray!");
+    }
+    else{
+    text.setAttribute("value",defaultText);
+}
+
+})
+
+}})
+</script>
+   
+<body style='margin : 0px; overflow: hidden;'>
+        <a-scene embedded arjs='sourceType: webcam;'>
+
+<a-plane position='0 -.8 -4' height=".5" width="4" color="#add8e6">
+    <a-text id="text"></a-text>
+</a-plane>
+        <!-- Aframe camera -->
+        <a-entity camera >
+        </a-entity>
+
+        <a-assets>
+            <a-asset-item id="fire" src="https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/flame_animation/scene.gltf"></a-asset-item>
+            <a-asset-item id="fireSword" src="https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/the_executioner/scene.gltf"></a-asset-item>         
+            <a-asset-item id="sword" src="https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/sword1/scene.gltf"></a-asset-item>
+            <a-asset-item id="monster" src="https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/low_poly_mutant_zombie/scene.gltf"></a-asset-item>
+       </a-assets>
+        
+        <a-marker  markerhandler preset="hiro" id="m1">
+            <a-entity animation-mixer id ="questItem1" gltf-model="#fire" scale=".6 .6 .6" position="0 0 -1.5"  >
+            </a-entity>                       
+        </a-marker>
+
+         <a-marker markerhandler  preset="kanji" id=m2>
+            <a-entity animation-mixer id="questItem2" gltf-model="#sword1" scale=".3 .3 .3" position="0 0 -1.5"  >
+            </a-entity> 
+        </a-marker>
+
+        <a-marker markerhandler  type="barcode" value="6"  id=m3>
+            <a-entity animation-mixer id="beast" gltf-model="#monster" scale=".3 .3 .3" position="0 0 -1.5"  >
+            </a-entity> 
+        </a-marker>
+    </a-scene>
+</body>
