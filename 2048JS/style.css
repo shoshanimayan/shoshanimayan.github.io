@@ -5,20 +5,12 @@ body{
 p{
     color: antiquewhite;
     font-size: 20px;
+        text-align: center;
 }
 
 h1{
     text-align: center;
         color: antiquewhite;
-}
-
-
-
-
-#score{
-      color: antiquewhite;
-
-    text-align: center;
 }
 
 .clear{
@@ -36,7 +28,7 @@ h1{
 
 #size{
     width: 50px;
-    margin-left: 10px;
+    margin-left: 15px;
     border-radius: 3px;
 }
 
