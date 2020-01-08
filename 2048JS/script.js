@@ -147,11 +147,12 @@ function pasteNewCell() {
     var row = Math.floor(Math.random() * size);
     var coll = Math.floor(Math.random() * size);
     if(!cells[row][coll].value) {
-      cells[row][coll].value = 2 * Math.ceil(Math.random() * 2);
+      cells[row][coll].value = 2;
       drawAllCells();
       return;
     }
   }
+  winCheck();
 }
 
 function moveRight () {
