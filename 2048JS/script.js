@@ -43,10 +43,10 @@ function drawCell(cell) {
   ctx.beginPath();
   ctx.rect(cell.x, cell.y, width, width);
   switch (cell.value){
-    case 0 : ctx.fillStyle = '#A9A9A9'; break;
-    case 2 : ctx.fillStyle = '#D2691E'; break;
-    case 4 : ctx.fillStyle = '#FF7F50'; break;
-    case 8 : ctx.fillStyle = '#ffbf00'; break;
+    case 0 : ctx.fillStyle = '#CCCCCC'; break;
+    case 2 : ctx.fillStyle = '#d2661e'; break;
+    case 4 : ctx.fillStyle = '#ff9873'; break;
+    case 8 : ctx.fillStyle = '#ffd34f'; break;
     case 16 : ctx.fillStyle = '#bfff00'; break;
     case 32 : ctx.fillStyle = '#40ff00'; break;
     case 64 : ctx.fillStyle = '#00bfff'; break;
