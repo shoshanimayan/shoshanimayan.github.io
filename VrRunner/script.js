@@ -1,8 +1,5 @@
 
-/************
- * CONTROLS *
- *******
- *****/
+//control
 const LEFT = -0.5;
 const CENTER = 0;
 const RIGHT = 0.5;
@@ -34,9 +31,7 @@ function setupControls() {
   })
 }
 
-/*********
- * TREES *
- *********/
+//tree
 
 var templateTreeLeft;
 var templateTreeCenter;
@@ -92,9 +87,9 @@ function shuffle(a) {
 
 function addTreesRandomly(
   {
-    probTreeLeft = 0.4,
-    probTreeCenter = 0.2,
-    probTreeRight = 0.4,
+    probTreeLeft = 0.25,
+    probTreeCenter = 0.45,
+    probTreeRight = .25,
     maxNumberTrees = 2
   } = {}) {
   	var trees = [
@@ -117,9 +112,7 @@ function addTreesRandomly(
 function removeTree(tree) {
   tree.parentNode.removeChild(tree);
 }
-/**************
- * COLLISIONS *
- **************/
+//collision
 
 const POSITION_Z_OUT_OF_SIGHT = 1;
 const POSITION_Z_LINE_START = -.5;
@@ -135,8 +128,6 @@ function setupCollision() {
         tree_id = tree.getAttribute('id');
 
         if (position.z > POSITION_Z_OUT_OF_SIGHT) {
-        	addScoreForTree(tree_id);
-        updateScoreDisplay();
           removeTree(tree);
 
         }
@@ -149,37 +140,10 @@ function setupCollision() {
     }
   })
 }
-/*********
- * SCORE *
- *********/
-
-var score;
-var countedTrees;
-var scoreDisplay;
-function setupScore() {
-  score = 0;
-  countedTrees = new Set();
-  scoreDisplay = document.getElementById('score');
-}
-
-function teardownScore() {
-  scoreDisplay.setAttribute('value', '');
-}
-
-function addScoreForTree(tree_id) {
-  if (countedTrees.has(tree_id)) return;
-  score += 1;
-  countedTrees.add(tree_id);
-}
-
-function updateScoreDisplay() {
-  scoreDisplay.setAttribute('value', score);
-}
 
 
-/********
- * GAME *
- ********/
+
+//game
 
 var isGameRunning = false;
 
@@ -189,9 +153,7 @@ setupCollision();
 function startGame() {
   if (isGameRunning) return;
   isGameRunning = true;
-setupScore();
-  updateScoreDisplay();
-  addTreesRandomlyLoop();
+
 }
 
 function gameOver() {
@@ -200,12 +162,10 @@ function gameOver() {
   alert('Game Over!');
   location.reload();
   teardownTrees();
-  teardownScore();
 
 }
 
 window.onload = function() {
-	setupScore();
   setupTrees();
   startGame();
 

@@ -6,8 +6,7 @@
           <script src="https://cdn.jsdelivr.net/gh/alvinwan/aframe-low-poly@0.0.2/dist/aframe-low-poly.min.js"></script>
           <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.0.1/dist/aframe-extras.min.js"></script>
   <script src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/alvinwan/mirrorvr@0.2.2/dist/mirrorvr.min.js"></script>
+
 
 
         <script src="script.js"></script>
@@ -66,16 +65,16 @@
 
 <lp-cone amplitude="0.05"  scale="2 2 2" shadow position="0 -3.5 -1.5" rotation="90 0 0" radius-top="1.9" radius-bottom="1.9" segments-radial="20" segments-height="20" height="20" emissive="#005DED" emissive-intensity="0.1" color="black">
   <a-entity id="tree-container" position="0 .5 -1.5" rotation="-90 0 0">
-<a-entity data-tree-position-index="2" class="tree" id="template-tree-center" shadow scale="0.3 0.3 0.3" position="0 0.5 -3.5" animation="property: position; from: 0 .5 -20; to: 0 .5 3; dur: 6000; easing: linear" >
+<a-entity data-tree-position-index="2" class="tree" id="template-tree-center" shadow scale="0.3 0.3 0.3" position="0 0.5 -3.5" animation="property: position; from: 0 .5 -20; to: 0 .5 3; dur: 5000; easing: linear" >
   <a-entity mixin="foliage"></a-entity>
 </a-entity>
-<a-entity data-tree-position-index="0" class="tree" id="template-tree-left" shadow scale="0.3 0.3 0.3" position="-.5 0.5 -3" animation="property: position; from: -.5 .5 -20; to: -.5 .5 3; dur: 6000; easing: linear" >  
+<a-entity data-tree-position-index="0" class="tree" id="template-tree-left" shadow scale="0.3 0.3 0.3" position="-.5 0.5 -3" animation="property: position; from: -.5 .5 -20; to: -.5 .5 3; dur: 5000; easing: linear" >  
   <a-entity mixin="foliage"></a-entity>
 </a-entity>
-<a-entity data-tree-position-index="1" class="tree" id="template-tree-right" shadow scale="0.3 0.3 0.3" position=".5 0.5 -3" animation="property: position; from: 0.5 .5 -20; to: 0.5 .5 3; dur: 6000; easing: linear" >
+<a-entity data-tree-position-index="1" class="tree" id="template-tree-right" shadow scale="0.3 0.3 0.3" position=".5 0.5 -3" animation="property: position; from: 0.5 .5 -20; to: 0.5 .5 3; dur: 5000; easing: linear" >
   <a-entity mixin="foliage"></a-entity>
 </a-entity>
-<a-text id="score" value="" mixin="text" height="40" width="40" position="0 2 -5" opacity="0.75"></a-text>
+
 
     <a-entity id="player" position ="0 .5 -1" player >
 <a-gltf-model id ="dolf" src="#ob5" position ="0 0 .3" scale=".001 .001 .001" animation="property: position;  from: 0 0 .3; to: 0 .05 .3; dur: 1000; dir: alternate; loop: true; easing: linear" >
@@ -84,7 +83,7 @@
 </a-gltf-model>
   </a-entity>
   </a-entity>
-</a-cone>
+</lp-cone>
 <a-sound src="#vape" autoplay="true" loop="true"></a-sound>
 
 
