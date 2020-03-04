@@ -25,17 +25,17 @@
         AFRAME.registerComponent('markerhandler', {
     init: function() {
         const animatedMarker = document.querySelector("#animated-marker");
-        const Git = document.querySelector("#Github");
+        //const Git = document.querySelector("#Github");
         //const Linkedin = document.querySelector("#Linkedin");
         //const Site = document.querySelector("#Website");
-        const GC = document.querySelector("#G-c");
+        //const GC = document.querySelector("#G-c");
        // const LC = document.querySelector("#L-c");
         //const WC = document.querySelector("#W-c");
         animatedMarker.addEventListener('click', function(ev, target){
             const intersectedElement = ev && ev.detail && ev.detail.intersectedEl;
-            if ((touched && Git && intersectedElement === Git)||(GC && intersectedElement === GC)) {
-                window.location.href = "https://github.com/shoshanimayan";
-            }
+        //    if ((touched && Git && intersectedElement === Git)||(GC && intersectedElement === GC)) {
+          //      window.location.href = "https://github.com/shoshanimayan";
+           // }
              //if ((touched && Linkedin && intersectedElement === Linkedin)||(LC && intersectedElement === LC)) {
               //  window.location.href = "https://www.linkedin.com/in/mayan-shoshani/";
             //}
@@ -51,8 +51,8 @@
                                 	    <p >focus camera on the QR code to get AR image<br>press images to active links<br> may have delay depending on browser type<br> mobile only</p>
 
 		<a-box position='0 0.5 0' material='opacity: 0.5;' id ="G-c">
-		                  <a-image id = "Github" width="2" height="2" src="https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/GitHub-Mark-120px-plus.png" position ="0 0 0"  rotation ="-90 0 0"></a-image>
-
+		               <!--   <a-image id = "Github" width="2" height="2" src="https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/GitHub-Mark-120px-plus.png" position ="0 0 0"  rotation ="-90 0 0"></a-image>
+-->
 		</a-box>
             
             
