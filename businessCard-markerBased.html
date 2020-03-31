@@ -3,12 +3,12 @@
     <head>
         <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     </head>
-	<style>
-		p {
+    <style>
+        p {
  text-align: center;
 
-		}
-	</style>
+        }
+    </style>
     <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
     <script src="https://rawgit.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
     <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
@@ -16,8 +16,8 @@
     <script >
         
         var touched=false;
-	
-	window.addEventListener('touchstart', function() {
+    
+    window.addEventListener('touchstart', function() {
   // the user touched the screen!
   touched=true;
 });
@@ -28,18 +28,18 @@
         const Git = document.querySelector("#Github");
         const Linkedin = document.querySelector("#Linkedin");
         const Site = document.querySelector("#Website");
-        const GC = document.querySelector("#G-c");
-        const LC = document.querySelector("#L-c");
-        const WC = document.querySelector("#W-c");
+        //const GC = document.querySelector("#G-c");
+        //const LC = document.querySelector("#L-c");
+        //const WC = document.querySelector("#W-c");
         animatedMarker.addEventListener('click', function(ev, target){
             const intersectedElement = ev && ev.detail && ev.detail.intersectedEl;
-            if ((touched && Git && intersectedElement === Git)||(GC && intersectedElement === GC)) {
+            if ((touched && Git && intersectedElement === Git)) {
                 window.location.href = "https://github.com/shoshanimayan";
             }
-             if ((touched && Linkedin && intersectedElement === Linkedin)||(LC && intersectedElement === LC)) {
+             if ((touched && Linkedin && intersectedElement === Linkedin)) {
                 window.location.href = "https://www.linkedin.com/in/mayan-shoshani/";
             }
-             if ((Site && intersectedElement === Site)||(WC && intersectedElement === WC)) {
+             if ((Site && intersectedElement === Site)) {
                 window.location.href = "https://sites.google.com/view/shoshani-cv";
             }
         });
@@ -48,17 +48,16 @@
     <body style='margin : 0px; overflow: hidden;'>
         <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
         <a-marker markerhandler emitevents="true" cursor="rayOrigin: mouse" id="animated-marker" type ="barcode" value="6">
-                                	    <p >focus camera on the QR code to get AR image<br>press images to active links<br> may have delay depending on browser type<br> mobile only</p>
+                                        <p >focus camera on the QR code to get AR image<br>press images to active links<br> may have delay depending on browser type<br> mobile only</p>
 
-		<a-entity id ="G-c" geometry="primitive: circle; radius: 2" position='-2 0.7 2' rotation ="-90 0 0" material="color:white">
-                  <a-image id = "Github" width="2" height="2" src="https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/GitHub-Mark-120px-plus.png" position ="0 0 0.1" ></a-image>
-            </a-entity>
-             <a-entity  id = "L-c" geometry="primitive: circle; radius: 2" position='2 0.7 2' rotation ="-90 0 0" material="color:white">
-                  <a-image id="Linkedin" width="2" height="2" src="https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/linkedin_cropped.png" position ="0 0 0.1" ></a-image>
-            </a-entity>
-             <a-entity  id = "W-c"geometry="primitive: circle; radius: 2" position='0 0.7 -2' rotation ="-90 0 0" material="color:white">
-                  <a-image width="2" height="2" id="Website"src="https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/circle-cropped.png" position ="0 0 0.1" ></a-image>
-                <a-text value="website" color = "black" position = "-.4 -.7 0.15"></a-text>
+        <a-entity id ="G-c" position='0.5 0.5 0.5' rotation ="-90 0 0" >
+                  <a-image id = "Github" scale ="2 2 2" width="2" height="2" src="https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/GitHub-Mark-120px-plus.png" position ="3 0 0" ></a-image>
+            
+             
+                  <a-image scale ="2 2 2" id="Linkedin" width="2" height="2" src="https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/linkedin_cropped.png" position ="0 3 0" ></a-image>
+            
+             
+                  <a-image width="2" scale ="2 2 2" height="2" id="Website"src="https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/circle-cropped.png" position ="-3 0 0" ></a-image>
 
             </a-entity>
         </a-marker>
