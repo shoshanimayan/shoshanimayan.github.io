@@ -115,8 +115,8 @@ function removeTree(tree) {
 //collision
 
 const POSITION_Z_OUT_OF_SIGHT = 1;
-const POSITION_Z_LINE_START = -.5;
-const POSITION_Z_LINE_END = -.35;
+const POSITION_Z_LINE_START = -.7;
+const POSITION_Z_LINE_END = -.5;
 
 function setupCollision() {
   AFRAME.registerComponent('player', {
