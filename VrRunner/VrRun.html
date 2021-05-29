@@ -16,13 +16,13 @@
         <body>
 <a-scene fog="type: linear; color: #FE019A; near:5; far:20">
   <a-assets>
-    <a-asset-item id="ob2" src="https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/bacc/scene.gltf"></a-asset-item>
-    <a-asset-item id="ob1" src="https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/david/scene.gltf"></a-asset-item>
-    <a-asset-item id="ob3" src="https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/flamingo/scene.gltf"></a-asset-item>
-    <a-asset-item id="ob4" src="https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/helios/scene.gltf"></a-asset-item>
-    <a-asset-item id="ob5" src="https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/_images/dolphin/scene.gltf"></a-asset-item>
+    <a-asset-item id="ob2" src="Assets/bacc/scene.gltf"></a-asset-item>
+    <a-asset-item id="ob1" src="Assets/david/scene.gltf"></a-asset-item>
+    <a-asset-item id="ob3" src="Assets/flamingo/scene.gltf"></a-asset-item>
+    <a-asset-item id="ob4" src="Assets/helios/scene.gltf"></a-asset-item>
+    <a-asset-item id="ob5" src="Assets/dolphin/scene.gltf"></a-asset-item>
     <a-asset-item id="optimerBoldFont" src="https://rawgit.com/mrdoob/three.js/dev/examples/fonts/optimer_bold.typeface.json"></a-asset-item>
-    <audio id="vape" src="https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/VrRunner/the-loyalist-eastridge-turnstile.mp3" autoplay preload="auto"></audio>
+    <audio id="vape" src="the-loyalist-eastridge-turnstile.mp3" autoplay preload="auto"></audio>
 <a-mixin id="foliage" geometry="
       primitive: cone;
       segments-height: 1;
@@ -34,7 +34,7 @@
 
   </a-assets>
 
-             <a-sky src="https://raw.githubusercontent.com/shoshanimayan/shoshanimayan.github.io/master/VrRunner/sky.jpg" material="fog: false" id="sky-id"></a-sky>
+             <a-sky src="sky.jpg" material="fog: false" id="sky-id"></a-sky>
                  <a-entity text-geometry="value: VaporWave Run; material=color: pink; font: #optimerBoldFont" position="-10 25 -35" rotation="30 0 0" scale="5 5 5" animation="property: rotation; from: 0 0 0; to: -30 0 0; dur: 15000; dir: alternate; loop: true; easing: linear"></a-entity>
 
                    <a-entity text-geometry="value: Turn your head left and right to move your player, and avoid objects; material=color: pink; font: #optimerBoldFont" position="-20 20 -35" rotation="30 0 0" scale="2 2 2" animation="property: rotation; from: 0 0 0; to: -30 0 0; dur: 15000; dir: alternate; loop: true; easing: linear"></a-entity>
