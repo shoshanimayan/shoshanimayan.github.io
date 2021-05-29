@@ -31,46 +31,46 @@ function setupControls() {
   })
 }
 
-//tree
+//Spike
 
-var templateTreeLeft;
-var templateTreeCenter;
-var templateTreeRight;
-var numberOfTrees = 0;
-var treeContainer;
-var treeTimer;
+var templateSpikeLeft;
+var templateSpikeCenter;
+var templateSpikeRight;
+var numberOfSpikes = 0;
+var SpikeContainer;
+var SpikeTimer;
 
 
-function setupTrees() {
-  templateTreeLeft  = document.getElementById('template-tree-left');
-  templateTreeCenter = document.getElementById('template-tree-center');
-  templateTreeRight  = document.getElementById('template-tree-right');
-  templates  = [templateTreeLeft, templateTreeCenter, templateTreeRight];
-  treeContainer  = document.getElementById('tree-container');
+function setupSpikes() {
+  templateSpikeLeft  = document.getElementById('template-Spike-left');
+  templateSpikeCenter = document.getElementById('template-Spike-center');
+  templateSpikeRight  = document.getElementById('template-Spike-right');
+  templates  = [templateSpikeLeft, templateSpikeCenter, templateSpikeRight];
+  SpikeContainer  = document.getElementById('Spike-container');
 
-  removeTree(templateTreeLeft);
-  removeTree(templateTreeRight);
-  removeTree(templateTreeCenter);
+  removeSpike(templateSpikeLeft);
+  removeSpike(templateSpikeRight);
+  removeSpike(templateSpikeCenter);
 }
 
-function teardownTrees() {
-  clearInterval(treeTimer);
+function teardownSpikes() {
+  clearInterval(SpikeTimer);
 }
 
-function addTreesRandomlyLoop({intervalLength = 500} = {}) {
-  treeTimer = setInterval(addTreesRandomly, intervalLength);
+function addSpikesRandomlyLoop({intervalLength = 850} = {}) {
+  SpikeTimer = setInterval(addSpikesRandomly, intervalLength);
 }
 
 
-function addTree(el) {
-  numberOfTrees += 1;
-  el.id = 'tree-' + numberOfTrees;
-  treeContainer.appendChild(el);
+function addSpike(el) {
+  numberOfSpikes += 1;
+  el.id = 'Spike-' + numberOfSpikes;
+  SpikeContainer.appendChild(el);
 }
 
-function addTreeTo(position_index) {
+function addSpikeTo(position_index) {
   var template = templates[position_index];
-  addTree(template.cloneNode(true));
+  addSpike(template.cloneNode(true));
 }
 
 
@@ -85,32 +85,32 @@ function shuffle(a) {
    return a;
 }
 
-function addTreesRandomly(
+function addSpikesRandomly(
   {
-    probTreeLeft = 0.25,
-    probTreeCenter = 0.45,
-    probTreeRight = .25,
-    maxNumberTrees = 2
+    probSpikeLeft = 0.25,
+    probSpikeCenter = 0.45,
+    probSpikeRight = .25,
+    maxNumberSpikes = 2
   } = {}) {
-  	var trees = [
-    {probability: probTreeLeft,   position_index: 0},
-    {probability: probTreeCenter, position_index: 1},
-    {probability: probTreeRight,  position_index: 2},
+  	var Spikes = [
+    {probability: probSpikeLeft,   position_index: 0},
+    {probability: probSpikeCenter, position_index: 1},
+    {probability: probSpikeRight,  position_index: 2},
   ]
-  shuffle(trees);
-  var numberOfTreesAdded = 0;
-  trees.forEach(function (tree) {
-  	  if (Math.random() < tree.probability && numberOfTreesAdded < maxNumberTrees) {
-      addTreeTo(tree.position_index);
-      numberOfTreesAdded += 1;
+  shuffle(Spikes);
+  var numberOfSpikesAdded = 0;
+  Spikes.forEach(function (Spike) {
+  	  if (Math.random() < Spike.probability && numberOfSpikesAdded < maxNumberSpikes) {
+      addSpikeTo(Spike.position_index);
+      numberOfSpikesAdded += 1;
     }
   });
-    return numberOfTreesAdded;
+    return numberOfSpikesAdded;
 
 }
 
-function removeTree(tree) {
-  tree.parentNode.removeChild(tree);
+function removeSpike(Spike) {
+  Spike.parentNode.removeChild(Spike);
 }
 //collision
 
@@ -122,18 +122,18 @@ function setupCollision() {
   AFRAME.registerComponent('player', {
     tick: function() {
 
-      document.querySelectorAll('.tree').forEach(function(tree) {
-        position = tree.getAttribute('position');
-        tree_position_index = tree.getAttribute('data-tree-position-index');
-        tree_id = tree.getAttribute('id');
+      document.querySelectorAll('.Spike').forEach(function(Spike) {
+        position = Spike.getAttribute('position');
+        Spike_position_index = Spike.getAttribute('data-Spike-position-index');
+        Spike_id = Spike.getAttribute('id');
 
         if (position.z > POSITION_Z_OUT_OF_SIGHT) {
-          removeTree(tree);
+          removeSpike(Spike);
 
         }
         if (!isGameRunning) return;
         	
- if (POSITION_Z_LINE_START <= position.z && position.z <= POSITION_Z_LINE_END && tree_position_index == player_position_index) {
+ if (POSITION_Z_LINE_START <= position.z && position.z <= POSITION_Z_LINE_END && Spike_position_index == player_position_index) {
           gameOver();
         }
       })
@@ -161,13 +161,13 @@ function gameOver() {
 
   alert('Game Over!');
   location.reload();
-  teardownTrees();
+  teardownSpikes();
 
 }
 
 window.onload = function() {
-  setupTrees();
+  setupSpikes();
   startGame();
 
-  addTreesRandomlyLoop();
+  addSpikesRandomlyLoop();
 }
