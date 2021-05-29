@@ -34,7 +34,7 @@
 
   </a-assets>
 
-             <a-sky  id="entity" src="sky.jpg" material="fog: false" id="sky-id" sound="src: #vape; autoplay: true; loop: true; positional: false"></a-sky>
+             <a-sky src="sky.jpg" material="fog: false" id="sky-id" sound="src: #vape; autoplay: true; loop: true; positional: false"></a-sky>
                  <a-entity text-geometry="value: VaporWave Run; material=color: pink; font: #optimerBoldFont" position="-10 25 -35" rotation="30 0 0" scale="5 5 5" animation="property: rotation; from: 0 0 0; to: -30 0 0; dur: 15000; dir: alternate; loop: true; easing: linear"></a-entity>
 
                    <a-entity text-geometry="value: Turn your head left and right to move your player, and avoid objects; material=color: pink; font: #optimerBoldFont" position="-20 20 -35" rotation="30 0 0" scale="2 2 2" animation="property: rotation; from: 0 0 0; to: -30 0 0; dur: 15000; dir: alternate; loop: true; easing: linear"></a-entity>
@@ -87,18 +87,5 @@
 
 
     </a-scene>
-    <script>
-      var entity = document.querySelector('#entity');
-      setInterval(function () {
-        var soundComponent = entity.components.sound;
-        var audioSource = soundComponent.pool.children[0].source;
-        if (!audioSource) {
-          console.log('...loading...');
-          return;
-        }
-        var audioContext = audioSource.context;
-        console.log('currentTime: %f', audioContext.currentTime);
-      }, 500);
-    </script>
         </body>
 </html>
