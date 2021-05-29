@@ -34,7 +34,7 @@
 
   </a-assets>
 
-             <a-sky src="sky.jpg" material="fog: false" id="sky-id" sound="src: #vape; autoplay: true; loop: true; positional: false"></a-sky>
+             <a-sky src="sky.jpg" material="fog: false" id="sky-id"></a-sky>
                  <a-entity text-geometry="value: VaporWave Run; material=color: pink; font: #optimerBoldFont" position="-10 25 -35" rotation="30 0 0" scale="5 5 5" animation="property: rotation; from: 0 0 0; to: -30 0 0; dur: 15000; dir: alternate; loop: true; easing: linear"></a-entity>
 
                    <a-entity text-geometry="value: Turn your head left and right to move your player, and avoid objects; material=color: pink; font: #optimerBoldFont" position="-20 20 -35" rotation="30 0 0" scale="2 2 2" animation="property: rotation; from: 0 0 0; to: -30 0 0; dur: 15000; dir: alternate; loop: true; easing: linear"></a-entity>
@@ -84,6 +84,7 @@
   </a-entity>
   </a-entity>
 </lp-cone>
+<a-sound src="#vape" autoplay="true" loop="true" preload="auto"></a-sound>
 
 
     </a-scene>
