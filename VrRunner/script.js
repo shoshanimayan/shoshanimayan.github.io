@@ -5,6 +5,7 @@ const CENTER = 0;
 const RIGHT = 0.5;
 var player_position_index = 1;
 var dolphin =  document.getElementById('dolf') 
+var text =  document.getElementById('text') 
 
 function movePlayerTo(position_index) {
   player_position_index = position_index;
@@ -158,9 +159,9 @@ function startGame() {
 
 function gameOver() {
   isGameRunning = false;
-
-  alert('Game Over!');
-  location.reload();
+text.setAttribute(text-geometry,"value: dead; material=color: pink; font: #optimerBoldFont")
+ // alert('Game Over!');
+ // location.reload();
   teardownSpikes();
 
 }

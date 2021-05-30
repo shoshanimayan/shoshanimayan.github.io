@@ -1,0 +1,92 @@
+<html>
+        <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/gh/alvinwan/aframe-low-poly@0.0.2/dist/aframe-low-poly.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.0.1/dist/aframe-extras.min.js"></script>
+  <script src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
+
+
+
+        <script src="script.js"></script>
+
+
+        </head>
+        <body>
+<a-scene fog="type: linear; color: #FE019A; near:5; far:20">
+  <a-assets>
+    <a-asset-item id="ob2" src="Assets/bacc/scene.gltf"></a-asset-item>
+    <a-asset-item id="ob1" src="Assets/david/scene.gltf"></a-asset-item>
+    <a-asset-item id="ob3" src="Assets/flamingo/scene.gltf"></a-asset-item>
+    <a-asset-item id="ob4" src="Assets/helios/scene.gltf"></a-asset-item>
+    <a-asset-item id="ob5" src="Assets/dolphin/scene.gltf"></a-asset-item>
+    <a-asset-item id="optimerBoldFont" src="https://rawgit.com/mrdoob/three.js/dev/examples/fonts/optimer_bold.typeface.json"></a-asset-item>
+    <audio id="vape" src="the-loyalist-eastridge-turnstile.mp3" autoplay preload="auto"></audio>
+<a-mixin id="foliage" geometry="
+      primitive: cone;
+      segments-height: 1;
+      segments-radial:4;
+      radius-bottom:0.3;"
+     material="color:#bc13fe;flat-shading: true;"></a-mixin>
+   
+       
+
+  </a-assets>
+
+             <a-sky src="sky.jpg" material="fog: false" id="sky-id"></a-sky>
+                 <a-entity text-geometry="value: VaporWave Run; material=color: pink; font: #optimerBoldFont" position="-10 25 -35" rotation="30 0 0" scale="5 5 5" animation="property: rotation; from: 0 0 0; to: -30 0 0; dur: 15000; dir: alternate; loop: true; easing: linear"></a-entity>
+
+                   <a-entity  id="text" text-geometry="value: Turn your head left and right to move your player, and avoid objects; material=color: pink; font: #optimerBoldFont" position="-20 20 -35" rotation="30 0 0" scale="2 2 2" animation="property: rotation; from: 0 0 0; to: -30 0 0; dur: 15000; dir: alternate; loop: true; easing: linear"></a-entity>
+
+                   
+                 
+             <a-light type="directional" castShadow="true" intensity="0.4" color="#D0EAF9;" position="5 3 1"></a-light>
+      <a-light intensity="0.8" type="ambient" color="#B4C5EC"></a-light>
+<a-camera  position="0 1 0"  lane-controls>
+  
+  <a-entity cursor="fuse: true; fuseTimeout: 500"
+            position="0 0 -1"
+            geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+            material="color: whit; shader: flat">
+  </a-entity>
+</a-camera>
+
+<a-plane rotation ="-90 0 0" position="0 -1 0" scale ="30 30 30" ></a-plane>
+<a-ocean color="#bc13fe" width="50" depth="50" density="15" speed="2" position ="0 -.5 0"></a-ocean>
+
+<a-gltf-model src="#ob1" rotation="-60 -70 0"scale=".005 .005 .005" position="10 -.7 -10" animation="property: rotation; from: -60 -60 -10; to: -60 -80 20; dur: 15000; dir: alternate; loop: true; easing: linear"></a-gltf-model>
+<a-gltf-model src="#ob2" position="-10 -.1 -15" scale ="1 1 1" animation="property: rotation; from: 0 -10 0; to: 0 10 0; dur: 15000; dir: alternate; loop: true; easing: linear" ></a-gltf-model>
+<a-gltf-model src="#ob4" position="-3 -.7 -3" scale =".5 .5 .5" rotation="-30 60 0" animation="property: position; from: -3 -.7 -3; to: -3 -.8 -3; dur: 1750; dir: alternate; loop: true; easing: linear">
+</a-gltf-model>
+<a-gltf-model material="fog: false" src="#ob3" position="-.5 .5 -35" scale =".05 .05 .05" rotation="0 90 0" animation="property: position; from: -.5 -.5 -35; to: -.5 -.1 -35; dur: 1750; dir: alternate; loop: true; easing: linear"></a-gltf-model>
+
+
+
+<lp-cone amplitude="0.05"  scale="2 2 2" shadow position="0 -3.5 -1.5" rotation="90 0 0" radius-top="1.9" radius-bottom="1.9" segments-radial="20" segments-height="20" height="20" emissive="#005DED" emissive-intensity="0.1" color="black">
+  <a-entity id="Spike-container" position="0 .5 -1.5" rotation="-90 0 0">
+<a-entity data-Spike-position-index="2" class="Spike" id="template-Spike-center" shadow scale="0.3 0.3 0.3" position="0 0.5 -3.5" animation="property: position; from: 0 .5 -20; to: 0 .5 3; dur: 10000; easing: linear" >
+  <a-entity mixin="foliage"></a-entity>
+</a-entity>
+<a-entity data-Spike-position-index="0" class="Spike" id="template-Spike-left" shadow scale="0.3 0.3 0.3" position="-.5 0.5 -3" animation="property: position; from: -.5 .5 -20; to: -.5 .5 3; dur: 10000; easing: linear" >  
+  <a-entity mixin="foliage"></a-entity>
+</a-entity>
+<a-entity data-Spike-position-index="1" class="Spike" id="template-Spike-right" shadow scale="0.3 0.3 0.3" position=".5 0.5 -3" animation="property: position; from: 0.5 .5 -20; to: 0.5 .5 3; dur: 10000; easing: linear" >
+  <a-entity mixin="foliage"></a-entity>
+</a-entity>
+
+
+    <a-entity id="player" position ="0 .5 -1" player >
+<a-gltf-model id ="dolf" src="#ob5" position ="0 0 .3" scale=".001 .001 .001" animation="property: position;  from: 0 0 .3; to: 0 .05 .3; dur: 1000; dir: alternate; loop: true; easing: linear" >
+
+                <a-light type="point" intensity="1" color="#FF440C"></a-light>
+</a-gltf-model>
+  </a-entity>
+  </a-entity>
+</lp-cone>
+<a-sound src="#vape" autoplay="true" loop="true" preload="auto"></a-sound>
+
+
+    </a-scene>
+        </body>
+</html>
