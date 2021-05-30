@@ -157,12 +157,15 @@ function startGame() {
 
 }
 
+
+
+
+
 function gameOver() {
   isGameRunning = false;
-text.setAttribute(text-geometry,"value: dead; material=color: pink; font: #optimerBoldFont")
- // alert('Game Over!');
- // location.reload();
   teardownSpikes();
+  location.reload();
+
 
 }
 
