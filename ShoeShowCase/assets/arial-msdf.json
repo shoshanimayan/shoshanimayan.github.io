@@ -522,20 +522,6 @@
             "page": 0
         },
         {
-            "id": 66,
-            "index": 37,
-            "char": "B",
-            "width": 27,
-            "height": 34,
-            "xoffset": 1,
-            "yoffset": 3,
-            "xadvance": 28,
-            "chnl": 15,
-            "x": 159,
-            "y": 144,
-            "page": 0
-        },
-        {
             "id": 105,
             "index": 76,
             "char": "i",
@@ -575,6 +561,20 @@
             "chnl": 15,
             "x": 55,
             "y": 87,
+            "page": 0
+        },
+        {
+            "id": 66,
+            "index": 37,
+            "char": "B",
+            "width": 27,
+            "height": 34,
+            "xoffset": 1,
+            "yoffset": 3,
+            "xadvance": 28,
+            "chnl": 15,
+            "x": 159,
+            "y": 144,
             "page": 0
         },
         {
@@ -1054,20 +1054,6 @@
             "page": 0
         },
         {
-            "id": 117,
-            "index": 88,
-            "char": "u",
-            "width": 22,
-            "height": 26,
-            "xoffset": 1,
-            "yoffset": 11,
-            "xadvance": 23,
-            "chnl": 15,
-            "x": 254,
-            "y": 111,
-            "page": 0
-        },
-        {
             "id": 114,
             "index": 85,
             "char": "r",
@@ -1079,6 +1065,20 @@
             "chnl": 15,
             "x": 201,
             "y": 213,
+            "page": 0
+        },
+        {
+            "id": 117,
+            "index": 88,
+            "char": "u",
+            "width": 22,
+            "height": 26,
+            "xoffset": 1,
+            "yoffset": 11,
+            "xadvance": 23,
+            "chnl": 15,
+            "x": 254,
+            "y": 111,
             "page": 0
         },
         {
@@ -1346,8 +1346,6 @@
             "n",
             "o",
             "t",
-            "B",
-            "u",
             "a",
             "b",
             "c",
@@ -1359,6 +1357,8 @@
             "l",
             "r",
             "s",
+            "u",
+            "B",
             "!",
             "\"",
             "#",
